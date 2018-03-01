@@ -20,7 +20,6 @@ public class Main {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             while ((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
                 String[] arr = line.split(",");
                 graph.addEdge(new City(arr[0].trim()), new City(arr[1].trim()));
             }

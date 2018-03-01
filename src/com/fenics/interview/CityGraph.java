@@ -19,7 +19,7 @@ public class CityGraph<C extends City> {
      */
     private void addCity(C c){
         if (this.adjList.containsKey(c)){
-            System.out.println("already added");
+//            System.out.println("already added");
             return;
         }
         this.adjList.put(c, new HashSet<>());
@@ -70,7 +70,7 @@ public class CityGraph<C extends City> {
         queue.add(startCity);
         while (!queue.isEmpty()){
             C city = queue.remove();
-            System.out.println("visiting " + city.getName());
+//            System.out.println("visiting " + city.getName());
             if (this.isAdjacent(city, destination)){
                 return true;
             }else {
