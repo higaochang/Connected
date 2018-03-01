@@ -36,7 +36,7 @@ public class CityGraph<C extends City> {
     }
 
     /**
-     * get all one step unvisited neighbors
+     * get all one step neighbors
      * @param from
      * @return
      */
